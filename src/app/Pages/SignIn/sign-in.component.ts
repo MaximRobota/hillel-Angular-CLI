@@ -2,10 +2,10 @@ import {Component} from '@angular/core';
 
 @Component(
     {
-        template: `<h2>Auth Component</h2>`
+        template: `<h2>SignIn Component</h2>`
     }
 )
 
-export class AuthComponent {
+export class SignInComponent {
 
 }
