@@ -8,6 +8,8 @@ import { SignUpComponent } from './Pages/SignIn/sign-up.component';
 import { SignInComponent } from './Pages/SignIn/sign-in.component';
 import { AlertComponent } from './Pages/Alert/alert.component';
 import { AlertContComponent } from './Pages/Alert/alertCont.component';
+import { HightDirective } from './Pages/Alert/hight.directive';
+import { ToolTipDirective } from './Pages/tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AlertContComponent } from './Pages/Alert/alertCont.component';
     SignUpComponent,
     SignInComponent,
     AlertComponent,
-    AlertContComponent
+    AlertContComponent,
+    HightDirective,
+    ToolTipDirective
   ],
   imports: [
     BrowserModule,

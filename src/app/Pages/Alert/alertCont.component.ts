@@ -6,7 +6,7 @@ import {Component, Output, EventEmitter} from '@angular/core';
       <ng-content select=".header"></ng-content>
       <ng-content select=".content"></ng-content>
   </div>
-  <button (click)="closeAlert()">Close</button>`
+  <button (click)="closeAlert()" tooltip [text]="'My tooltip'">Close</button>`
 
 })
 export class AlertContComponent {
