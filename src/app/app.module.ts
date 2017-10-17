@@ -16,6 +16,8 @@ import { DropComponent } from './Pages/DropDown/drop.component';
 import { TabsComponent } from './Pages/Tabs/tabs.component';
 import { MainTabsComponent } from './Pages/Tabs/main-tabs.component';
 import { TabComponent } from './Pages/Tabs/tab.component';
+import { HighlightDirective } from './Pages/Directive/highlight.directive';
+import { MainDirComponent } from './Pages/Directive/main-dir.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { TabComponent } from './Pages/Tabs/tab.component';
     DropComponent,
     TabsComponent,
     TabComponent,
-    MainTabsComponent
+    MainTabsComponent,
+    HighlightDirective,
+    MainDirComponent
   ],
   imports: [
     BrowserModule,

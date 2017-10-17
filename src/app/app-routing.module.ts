@@ -7,6 +7,7 @@ import { AlertComponent } from './Pages/Alert/alert.component';
 import { MainLoaderComponent } from './Pages/Loader/main-loader.component';
 import { DropComponent } from './Pages/DropDown/drop.component';
 import { MainTabsComponent } from './Pages/Tabs/main-tabs.component';
+import { MainDirComponent } from './Pages/Directive/main-dir.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'alert', component: AlertComponent },
   { path: 'loader', component: MainLoaderComponent },
   { path: 'drop', component: DropComponent },
-  { path: 'tabs', component: MainTabsComponent }
+  { path: 'tabs', component: MainTabsComponent },
+  { path: 'directive', component: MainDirComponent }
 ];
 
 @NgModule({
