@@ -1,0 +1,13 @@
+body{
+  background: #000;
+}
+.active{
+  background: #f0e8e5;
+  width: 100px;
+  text-align: center;
+}
+.inactive{
+  background: #dbdbdb;
+  width: 100px;
+  text-align: center;
+}

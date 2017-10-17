@@ -1,0 +1,8 @@
+nav {
+  margin-bottom: 20px;
+}
+nav a{
+  font-size: 15px;
+  padding: 10px;
+  background: #dbdbdb;
+}

@@ -1,0 +1,9 @@
+<app-tabs>
+  <div *ngFor="let tab of tabs;  let tabIx = index">
+    <app-tab tabTitle="{{tab.name}}"  [active]= "tab.active">
+      <div class="col-right-content">
+        {{tab.name}}
+      </div>
+    </app-tab>
+  </div>
+</app-tabs>
