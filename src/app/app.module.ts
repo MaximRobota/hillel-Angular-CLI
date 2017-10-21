@@ -5,11 +5,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Pages/Home/home.component';
-import { SignUpComponent } from './Pages/SignIn/sign-up.component';
-import { SignInComponent } from './Pages/SignIn/sign-in.component';
 import { AlertComponent } from './Pages/Alert/alert.component';
+import { AlertModalComponent } from './Pages/Modal/alert.component';
 import { AlertContComponent } from './Pages/Alert/alertCont.component';
-import { AuthComponent } from './Pages/auth/auth.component';
 import { MainLoaderComponent } from './Pages/Loader/main-loader.component';
 import { LoaderComponent } from './Pages/Loader/loader.component';
 import { DropComponent } from './Pages/DropDown/drop.component';
@@ -24,31 +22,36 @@ import { RevertifDirective } from './Pages/nIf/nif.directive';
 import { RevertIfComponent } from './Pages/nIf/nif.component';
 import { SizePipi } from './Pages/Pipe/pipe-size.pipe';
 import { FileSizeComponent } from './Pages/Pipe/file-size.component';
+import { TooltipDirective } from './Pages/Alert/tooltip.directive';
+import { MainModalComponent } from './Pages/Modal/main-modal.component';
+import { ProgressBarComponent } from './Pages/progress-bar/progress-bar.component';
+import { MainProgressBarComponent } from './Pages/progress-bar/main-progress-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SignUpComponent,
-    SignInComponent,
     AlertComponent,
     AlertContComponent,
+    AlertModalComponent,
     MainLoaderComponent,
     LoaderComponent,
-    AuthComponent,
     DropComponent,
     TabsComponent,
     TabComponent,
     MainTabsComponent,
     HighlightDirective,
     MainDirComponent,
-    AlertContComponent,
     HightDirective,
     ToolTipDirective,
     RevertIfComponent,
     RevertifDirective,
     SizePipi,
-    FileSizeComponent
+    FileSizeComponent,
+    TooltipDirective,
+    MainModalComponent,
+    ProgressBarComponent,
+    MainProgressBarComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +59,7 @@ import { FileSizeComponent } from './Pages/Pipe/file-size.component';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AlertModalComponent]
 })
 export class AppModule { }

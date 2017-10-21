@@ -1,0 +1,12 @@
+<progress-bar *ngIf="checked"
+              [width]="'30%'"
+              [className]="'my-cls'"
+              [value]="value"
+              (startProgress)="onStart()"
+              (endProgress)="onFinish()"></progress-bar>
+<progress-bar *ngIf="checked"
+              [width]="'50%'"
+              [className]="'my-cls'"
+              [value]="value1"
+              (startProgress)="onStart()"
+              (endProgress)="onFinish()"></progress-bar>
