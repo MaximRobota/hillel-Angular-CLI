@@ -8,6 +8,8 @@ import { MainLoaderComponent } from './Pages/Loader/main-loader.component';
 import { DropComponent } from './Pages/DropDown/drop.component';
 import { MainTabsComponent } from './Pages/Tabs/main-tabs.component';
 import { MainDirComponent } from './Pages/Directive/main-dir.component';
+import { RevertIfComponent } from './Pages/nIf/nif.component';
+import { FileSizeComponent } from './Pages/Pipe/file-size.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'loader', component: MainLoaderComponent },
   { path: 'drop', component: DropComponent },
   { path: 'tabs', component: MainTabsComponent },
+  { path: 'nif', component: RevertIfComponent },
+  { path: 'file-size', component: FileSizeComponent },
   { path: 'directive', component: MainDirComponent }
 ];
 

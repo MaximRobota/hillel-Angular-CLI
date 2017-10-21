@@ -11,7 +11,6 @@ export class HighlightDirective implements OnInit {
 
   }
   private highlight(color: string) {
-    console.log();
     let num = parseInt(this.el.nativeElement.innerHTML.replace(/\D+/g,""));
     let text = this.el.nativeElement.innerHTML.replace(/\d/g, '');
     this.el.nativeElement.style.backgroundColor = color;

@@ -20,6 +20,10 @@ import { HighlightDirective } from './Pages/Directive/highlight.directive';
 import { MainDirComponent } from './Pages/Directive/main-dir.component';
 import { HightDirective } from './Pages/Alert/hight.directive';
 import { ToolTipDirective } from './Pages/tooltip.directive';
+import { RevertifDirective } from './Pages/nIf/nif.directive';
+import { RevertIfComponent } from './Pages/nIf/nif.component';
+import { SizePipi } from './Pages/Pipe/pipe-size.pipe';
+import { FileSizeComponent } from './Pages/Pipe/file-size.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +41,14 @@ import { ToolTipDirective } from './Pages/tooltip.directive';
     TabComponent,
     MainTabsComponent,
     HighlightDirective,
-    MainDirComponent
+    MainDirComponent,
     AlertContComponent,
     HightDirective,
-    ToolTipDirective
+    ToolTipDirective,
+    RevertIfComponent,
+    RevertifDirective,
+    SizePipi,
+    FileSizeComponent
   ],
   imports: [
     BrowserModule,

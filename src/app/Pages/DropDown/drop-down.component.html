@@ -1,6 +1,6 @@
 <div ngClass="drop-header" [ngClass]="state" (click)="toggleState()">DropDown</div>
 <div ngClass="drop-body">
   <ul *ngFor="let list of lists" [@flyInOut]="state">
-    <li><a href="{{list.link}}">{{list.name}}</a></li>
+    <li><a href="{{list.link}}">{{list.name | filesize}}</a></li>
   </ul>
 </div>
