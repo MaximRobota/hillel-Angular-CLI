@@ -1,0 +1,8 @@
+<div ngClass="loader-header" [style.width]="width + '%'">
+  <div ngClass="loader-body" (changeValue) = "changeValue($event)">
+    <div ngClass="loader-spinner" [style.width]="value + '%'"></div>
+    <div ngClass="loader-value">{{value}} %</div>
+  </div>
+</div>
+
+

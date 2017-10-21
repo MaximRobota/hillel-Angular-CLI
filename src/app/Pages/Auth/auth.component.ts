@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   template: `auth`
 })
 export class AuthComponent {
-  title = 'app';
 }
