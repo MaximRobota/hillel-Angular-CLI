@@ -12,7 +12,7 @@ import { MainModalComponent } from './Pages/Modal/main-modal.component';
 import { MainProgressBarComponent } from './Pages/progress-bar/main-progress-bar.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'alert', component: AlertComponent },
   { path: 'modal', component: MainModalComponent },

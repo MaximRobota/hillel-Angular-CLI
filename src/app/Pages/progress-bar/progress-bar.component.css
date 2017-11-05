@@ -1,0 +1,33 @@
+
+.pb-container {
+  display: flex;
+  border-radius: 3px;
+  padding: 14px;
+  box-shadow: 0px 3px 5px 0px rgba(235,235,235,1);
+}
+
+.pb {
+  position: relative;
+  flex: 1;
+  background-color: #F3F3F3;
+  height: 16px;
+  border-radius: 8px;
+}
+
+.pb-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #B7DB6D;
+  will-change: width;
+  transition: width 70ms ease-in;
+}
+
+.pb-status {
+  height: 16px;
+  line-height: 16px;
+  margin-left: 14px;
+  font-size: 12px;
+}

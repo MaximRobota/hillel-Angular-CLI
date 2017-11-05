@@ -1,1 +1,27 @@
-<!--<div *revertIf="true">ello!</div>-->
+<h3>Custom IF directive</h3>
+<p>Condition: {{condition}}</p>
+<label for="checkbox">
+  Checkbox
+  <input #checkbox
+         id="checkbox"
+         type="checkbox"
+         [checked]="condition" (change)="condition = !condition">
+</label>
+<div *revertIf="condition">Hello</div>
+
+<p>Revert Directive ngIf  to revertNgIf</p>
+<h3>Range directive</h3>
+<h1>Your age:</h1>
+<select>
+  <ng-container *range="[18, 25];let n1">
+    <option [ngValue]="n1.num">{{n1.num}}</option>
+  </ng-container>
+</select>
+
+<h1>Year:</h1>
+<select>
+  <ng-container *range="[1998, 2016]; let num">
+    <option [ngValue]="num.num">{{num.num}}</option>
+  </ng-container>
+</select>
+

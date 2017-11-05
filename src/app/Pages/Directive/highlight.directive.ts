@@ -7,7 +7,7 @@ export class HighlightDirective implements OnInit {
   constructor(private el: ElementRef) {
   }
   ngOnInit() {
-    this.highlight('yellow');
+    // this.highlight('yellow');
 
   }
   private highlight(color: string) {

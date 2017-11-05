@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -26,6 +28,8 @@ import { TooltipDirective } from './Pages/Alert/tooltip.directive';
 import { MainModalComponent } from './Pages/Modal/main-modal.component';
 import { ProgressBarComponent } from './Pages/progress-bar/progress-bar.component';
 import { MainProgressBarComponent } from './Pages/progress-bar/main-progress-bar.component';
+import { CustomIfDirective } from './Pages/customIf/customIf.directive';
+import { RangeDirective } from './Pages/range/range.directive';
 
 @NgModule({
   declarations: [
@@ -51,10 +55,13 @@ import { MainProgressBarComponent } from './Pages/progress-bar/main-progress-bar
     TooltipDirective,
     MainModalComponent,
     ProgressBarComponent,
-    MainProgressBarComponent
+    MainProgressBarComponent,
+    CustomIfDirective,
+    RangeDirective
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
