@@ -3,6 +3,7 @@ import {Directive, Input, ViewContainerRef, TemplateRef} from '@angular/core';
 @Directive({
   selector: '[range]'
 })
+
 export class RangeDirective {
   _range: number[];
 
@@ -28,8 +29,6 @@ export class RangeDirective {
     for (let i = from; i <= to; i++) {
       arr.push(i);
     }
-
     return arr;
   }
-
 }

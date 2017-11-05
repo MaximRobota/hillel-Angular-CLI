@@ -10,6 +10,7 @@ import { RevertIfComponent } from './Pages/nIf/nif.component';
 import { FileSizeComponent } from './Pages/Pipe/file-size.component';
 import { MainModalComponent } from './Pages/Modal/main-modal.component';
 import { MainProgressBarComponent } from './Pages/progress-bar/main-progress-bar.component';
+import { DropzoneComponent } from './Pages/DropZone/main-dropzone.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'nif', component: RevertIfComponent },
   { path: 'file-size', component: FileSizeComponent },
   { path: 'progress-bar', component: MainProgressBarComponent },
-  { path: 'directive', component: MainDirComponent }
+  { path: 'directive', component: MainDirComponent },
+  { path: 'drop-zone', component: DropzoneComponent }
 ];
 
 @NgModule({
