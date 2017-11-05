@@ -7,15 +7,15 @@ export class HighlightDirective implements OnInit {
   constructor(private el: ElementRef) {
   }
   ngOnInit() {
-    // this.highlight('yellow');
+    this.highlight('yellow');
 
   }
   private highlight(color: string) {
-    let num = parseInt(this.el.nativeElement.innerHTML.replace(/\D+/g,""));
-    let text = this.el.nativeElement.innerHTML.replace(/\d/g, '');
+    // let num = parseInt(this.el.nativeElement.innerHTML.replace(/\D+/g,""));
+    // let text = this.el.nativeElement.innerHTML.replace(/\d/g, '');
     this.el.nativeElement.style.backgroundColor = color;
-    var div = document.createElement('div');
-    div.innerHTML = text + "<strong> " + num + "</strong>";
-    document.body.appendChild(div);
+    // var div = document.createElement('div');
+    // div.innerHTML = text + "<strong> " + num + "</strong>";
+    // document.body.appendChild(div);
   }
 }
