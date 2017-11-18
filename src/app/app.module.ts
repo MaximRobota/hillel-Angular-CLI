@@ -30,10 +30,12 @@ import { ProgressBarComponent } from './Pages/progress-bar/progress-bar.componen
 import { MainProgressBarComponent } from './Pages/progress-bar/main-progress-bar.component';
 import { CustomIfDirective } from './Pages/customIf/customIf.directive';
 import { RangeDirective } from './Pages/range/range.directive';
-import { DropzoneComponent } from './Pages/DropZone/main-dropzone.component';
-import { DropzoneDirective } from './Pages/DropZone/dropzone.directive';
-import { NumHighlightDirective } from './Pages/DropZone/numHighlight.directive';
-import { TranslateDirective } from './Pages/DropZone/translate.directive';
+import { MainCounterComponent } from './Pages/Ng-counter/main-counter.component';
+import { CounterComponent } from './Pages/Ng-counter/counter.component';
+// import { DropzoneComponent } from './Pages/DropZone/main-dropzone.component';
+// import { DropzoneDirective } from './Pages/DropZone/dropzone.directive';
+// import { NumHighlightDirective } from './Pages/DropZone/numHighlight.directive';
+// import { TranslateDirective } from './Pages/DropZone/translate.directive';
 
 @NgModule({
   declarations: [
@@ -62,10 +64,12 @@ import { TranslateDirective } from './Pages/DropZone/translate.directive';
     MainProgressBarComponent,
     CustomIfDirective,
     RangeDirective,
-    DropzoneComponent,
-    DropzoneDirective,
-    NumHighlightDirective,
-    TranslateDirective
+    CounterComponent,
+    MainCounterComponent
+    // DropzoneComponent
+    // DropzoneDirective,
+    // NumHighlightDirective,
+    // TranslateDirective
   ],
   imports: [
     BrowserModule,
