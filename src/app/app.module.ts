@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -31,6 +32,7 @@ import { MainProgressBarComponent } from './Pages/progress-bar/main-progress-bar
 import { CustomIfDirective } from './Pages/customIf/customIf.directive';
 import { RangeDirective } from './Pages/range/range.directive';
 import { MainCounterComponent } from './Pages/Ng-counter/main-counter.component';
+// import { ServiceHttpComponent } from './Pages/Home/service.component';
 import { CounterComponent } from './Pages/Ng-counter/counter.component';
 // import { DropzoneComponent } from './Pages/DropZone/main-dropzone.component';
 // import { DropzoneDirective } from './Pages/DropZone/dropzone.directive';
@@ -66,6 +68,7 @@ import { CounterComponent } from './Pages/Ng-counter/counter.component';
     RangeDirective,
     CounterComponent,
     MainCounterComponent
+    // ServiceHttpComponent
     // DropzoneComponent
     // DropzoneDirective,
     // NumHighlightDirective,
@@ -74,6 +77,7 @@ import { CounterComponent } from './Pages/Ng-counter/counter.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
